@@ -10,10 +10,12 @@ public class UniqueRandNum {
         for (int i = 0; i < 50; i++) {
             // create random numbers within the range of 10
             int randNum = rng.create(10);
-            if (!unique.contains(randNum)){
-                unique.add(randNum);
-                System.out.println(randNum);
-            }
+
+            // add the number to the set
+            unique.add(randNum);
         }
+        // print the set of random numbers
+        System.out.println(unique);
+        System.out.println(unique.size());
     }
 }
