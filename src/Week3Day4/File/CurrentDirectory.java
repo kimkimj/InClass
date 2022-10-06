@@ -4,7 +4,10 @@ import java.io.*;
 
 public class CurrentDirectory {
     public static void main(String[] args) {
+        // ./ means current directory
         File dir = new File("./");
+
+        // store all the files in an array
         File files[] = dir.listFiles();
 
         // Print every file in the current directory
@@ -13,3 +16,12 @@ public class CurrentDirectory {
         }
     }
 }
+
+/*
+.\.git
+.\.idea
+.\burger.txt
+.\InClass.iml
+.\out
+.\src
+ */
