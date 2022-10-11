@@ -5,12 +5,12 @@ public class SumOfDigits {
         System.out.println(solution(15));
     }
 
-    public static int solution(int N){
+    public static int solution(int n){
         int sum = 0;
-        while (N > 0) {
-            int digit = N % 10;
+        while (n > 0) {
+            int digit = n % 10;
             sum += digit;
-            N /= 10;
+            n /= 10;
         }
         return sum;
     }
