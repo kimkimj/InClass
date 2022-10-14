@@ -10,16 +10,18 @@ public class InsertionSort {
     }
 
     public static int[] insertionSort(int[] arr){
-        for(int i = 0; i < arr.length; i++){
-            for(int j = i - 1; j == 0; j++){
-                if (i < j){
-                    // copy
-                    for(int k = 0; k < j - 1; k++){
-                        //sorted[k] = arr[]
-                    }
-
-                }
+        for(int i = 1; i < arr.length; i++){
+            for(int j = i - 1; j == 0; j++) {
+                //
             }
         }
+        return arr;
     }
+
+    public static void swap(int[] arr, int target, int current){
+        int temp = arr[current];
+        arr[current] = arr[target];
+        arr[target] = temp;
+    }
+
 }
